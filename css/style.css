@@ -13,3 +13,6 @@ body {
   padding-bottom: 25px;
   padding-top: 15px;
 }
+.container-fluid#top-banner h1{
+  font-size: 56px;
+}
