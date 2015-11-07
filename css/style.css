@@ -16,3 +16,11 @@ body {
 .container-fluid#top-banner h1{
   font-size: 56px;
 }
+
+#side{
+  float: left;
+}
+
+#main-section{
+  float: left;
+}
