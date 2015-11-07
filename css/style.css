@@ -19,8 +19,10 @@ body {
 
 #side{
   float: left;
+  min-height: inherit;
 }
 
 #main-section{
   float: left;
+  margin-left: 50px;
 }
