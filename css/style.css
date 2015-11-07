@@ -19,7 +19,9 @@ body {
 
 #side{
   float: left;
-  min-height: inherit;
+  width: 250px;
+  min-height: 100%;
+  background-color: #90BB90;
 }
 
 #main-section{
