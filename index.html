@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" background-color;blue>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="jquery-1.11.3.js"</script>
-  <script src="js/main.js" charset="utf-8"></script>
+  <script src="js/jquery-1.11.3.js"</script>
+  <script src="js/scripts.js"></script>
   <title>Ping Pong</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <h1>Ping-Pong</h1>
   </div>
   <br>
-  <div class="col-4" id="side">
+  <div id="side">
     <h4>About Ping Pong</h4>
     <h5>Created by:</h5>
     <p>George Sustare</p>
@@ -22,7 +22,7 @@
     <h5>Level 2 Test for:</h5>
     <p>C#</p>
   </div>
-  <div class="col-8" id="main-section">
+  <div id="main-section">
     <h3>Let's play!</h3>
     <h5>Rules:</h5>
     <p>Ping Pong will count up to your number frm 1 wth the following exceptions:</p>
@@ -32,13 +32,11 @@
       <li>Numbers divisible by 3 and 5 become "pingpong"</li>
     </ol>
     <strong>Enter your number here:</strong>
-    <input type="text" id="input">
-    <button class="btn" id="hello">Ping Pong!</button>
-    <div class="answers">
-      <ul>
-        <li>answer here</li>
-      </ul>
-    </div>
+    <input type="text" id="txtinput">
+    <button class="btn" id="play-me">Ping Pong!</button>
+    <ul id="answer-me">
+      <li>TEST</li>
+    </ul>
   </div>
 </body>
 </html>
