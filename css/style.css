@@ -3,20 +3,22 @@
   padding: 0;
 }
 
-html{height:100%}
+html {
+  height:100%
+}
 
 body {
   background-color: #E2E2E2;
   height: 100%;
 }
 
-.container-fluid#top-banner{
+.container-fluid#top-banner {
   text-align: center;
   background-color: #f0daab;
   padding-bottom: 25px;
   padding-top: 15px;
 }
-.container-fluid#top-banner h1{
+.container-fluid#top-banner h1 {
   font-size: 56px;
 }
 
@@ -26,6 +28,17 @@ body {
   width: 250px;
   min-height: 100%;
   overflow: hidden;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#side h5 {
+  color: #F4DEB5;
+}
+
+#side p {
+  color: #FFFFFF;
+  font-size: 11px;
 }
 
 #main-section{
