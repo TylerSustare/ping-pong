@@ -1,11 +1,11 @@
 $(document).ready(function(){
 	$("button#play-me").click(function() {
-		var userInput = $("input#txtinput").val();
-		var maxNum = Number(userInput);
-		
+		var userInput = parseInt($("input#txtinput").val());
+		//var maxNum = Number(userInput);
+
 		$(".answers ul").empty()	// clear answers ul of items every time before showing answers
 
-		for (var i = 1; i <= maxNum; ++i){ // traditional loop variable 'i'
+		for (var i = 1; i <= userInput; ++i){ // traditional loop variable 'i'
 			if (i%15 === 0){ // explicit if divisible by 15
 				$("ul").append('<li>' + 'pingpong' + '</li>');
 			}
