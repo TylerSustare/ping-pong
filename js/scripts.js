@@ -1,3 +1,18 @@
+var pingPong = function(i) {
+	if (i % 15 === 0) {
+		return 'pingpong';
+	}
+	else if (i % 5 === 0){
+		return 'pong';
+	}
+	else if (i % 3 === 0){
+		return 'ping';
+	}
+	else {
+		return i;
+	}
+};
+
 $(document).ready(function(){
 	$("button#play-me").click(function() {
 		var userInput = parseInt($("input#txtinput").val());
@@ -5,16 +20,16 @@ $(document).ready(function(){
 
 		for (var i = 1; i <= userInput; ++i){ // traditional loop variable 'i'
 			if (i%15 === 0){ // explicit if divisible by 15
-				$("ul").append('<li>' + 'pingpong' + '</li>');
+				$("ul").append('<li>' + pingPong(i) + '</li>');
 			}
 			else if (i%5 === 0){ // if divisible by 5
-				$("ul").append('<li>' + 'pong' + '</li>');
+				$("ul").append('<li>' + pingPong(i) + '</li>');
 			}
 			else if (i%3 === 0){ // if divisible by 3
-				$("ul").append('<li>' + 'ping' + '</li>');
+				$("ul").append('<li>' + pingPong(i) + '</li>');
 			}
 			else { // if i is not divisible by 15, 5 or 3
-				$("ul").append('<li>' + i + '</li>');
+				$("ul").append('<li>' + pingPong(i) + '</li>');
 			}
 		}	// end for
   });
