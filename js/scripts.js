@@ -1,12 +1,12 @@
 // Tests the value passed in by rules of Ping-Pong
 var pingPong = function(iterator) {
-  if (iterator% 15 === 0) { 			// explicit check for divisible by 15
+  if (iterator% 15 === 0) {       // explicit check for divisible by 15
     return 'pingpong';
-  } else if (iterator% 5 === 0){	// divisible by 5
+  } else if (iterator% 5 === 0){  // divisible by 5
     return 'pong';
-	} else if (iterator% 3 === 0){	// divisible by 3
+	} else if (iterator% 3 === 0){  // divisible by 3
     return 'ping';
-  } else {												// not divisible by 15, 5, or 3
+  } else {                        // not divisible by 15, 5, or 3
     return iterator;
   }
 };
